@@ -20,7 +20,8 @@ app.post("/users", async(req,res)=>{
       [full_name]
     );
 
-    res.json(newTodo)
+    res.json(newTodo);
+    console.log(newTodo);
 
   } catch (err) {
     console.error(err.message);
