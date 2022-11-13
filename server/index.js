@@ -28,7 +28,7 @@ app.post("/users", async(req,res)=>{
 }
 });
 
-app.post("/users2", async(req,res)=>{
+app.get("/users2", async(req,res)=>{
   try {
     const { full_name } = req.body;
 
