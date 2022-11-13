@@ -28,6 +28,23 @@ app.post("/users", async(req,res)=>{
 }
 });
 
+app.post("/users2", async(req,res)=>{
+  try {
+    const { full_name } = req.body;
+
+    const newTodo = await pool.query(
+      "INSERT INTO users (full_name) VALUES($1)",
+      [full_name]
+    );
+
+    res.json(newTodo);
+    console.log(newTodo);
+
+  } catch (err) {
+    console.error(err.message);
+}
+});
+
 //List of all current customers
 
 
