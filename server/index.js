@@ -22,10 +22,10 @@ app.post("/users", async(req,res)=>{
 
     res.json(newTodo);
     console.log(newTodo);
-    console.log({full_name})
+    console.log({full_name});
 
   } catch (err) {
-    console.error(err.message);
+    //console.error(err.message);
 }
 });
 

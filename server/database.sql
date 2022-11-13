@@ -1,6 +1,4 @@
 
-
-
 /*
     const { first_name } = req.body;
     const { last_name } = req.body;
