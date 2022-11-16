@@ -9,6 +9,7 @@ function App() {
    <Fragment>
     <div className="container">
     <FormUsed/>
+    <FormUsed/>
     </div>
    </Fragment>
   );
